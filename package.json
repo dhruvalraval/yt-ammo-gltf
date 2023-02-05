@@ -1,0 +1,23 @@
+{
+  "name": "ssr-triiiye",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.54.4",
+    "vite": "^3.0.7"
+  },
+  "dependencies": {
+    "gsap": "^3.10.4",
+    "lodash": "^4.17.21",
+    "prefix": "^1.0.0",
+    "screen-space-reflections": "^2.5.0",
+    "three": "^0.143.0",
+    "tweakpane": "^3.1.0"
+  }
+}
