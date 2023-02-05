@@ -46,8 +46,8 @@ export default class Canvas {
 
 	createCamera () {
 		this.camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000)
-		this.camera.position.z = 40
-		this.camera.position.y = 20
+		this.camera.position.z = 30
+		this.camera.position.y = 10
 
 	}
 
@@ -124,7 +124,7 @@ export default class Canvas {
 		mass = 0
 
 		//plane in threejs
-		let blockPlane = new THREE.Mesh(new THREE.BoxGeometry(scale.x, scale.y, scale.z), new THREE.MeshPhongMaterial({color: 0xffffff}))
+		let blockPlane = new THREE.Mesh(new THREE.BoxGeometry(scale.x, scale.y, scale.z), new THREE.MeshStandardMaterial({color: 0xffffff, metalness: 1, roughness: 0.3}))
 		blockPlane.position.set(pos.x, pos.y, pos.z)
 		
 		blockPlane.castShadow = true
